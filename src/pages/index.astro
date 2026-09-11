@@ -1,26 +1,39 @@
 ---
-
+import Card from "../components/Card.astro"
 ---
 
-<html lang="en">
+<html lang="da">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<!-- Husk at skirv no robots -->
 		<title>Rådgivningen Orfeus</title>
 	</head>
+	
 	<body>
+	<header></header>
+	<main></main>
 		<h1>Rådgivning Orfeus</h1>
-		<p>lorme</p>
-		<section>
-		<h2></h2>
-		<p></p>
-		</section>
-		<section>
-		<h2></h2>
-		<p></p>
-		</section>
+<Card
+headline="Gruppe terapi"
+tekst="Vores grupper er kun rådgivning for pårørende til misbrug og er opdelt efter type af relation."
+/>
+<Card
+headline="Klub sofa"
+tekst="bla bla bla"
+/>
+<Card
+headline="Rådgivningstelefonen"
+tekst="bla bla bla"
+/>
+		</main>
+		<footer></footer>
 	</body>
+
+
+
+
 </html>

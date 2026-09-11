@@ -1,5 +1,6 @@
 ---
 import Card from "../components/Card.astro";
+import NoteCardLeft from "../components/NoteCardLeft.astro";
 import CTA from "../components/CTA.astro";
 import Footer from "../components/Header.astro";
 import Header from "../components/Footer.astro";
@@ -18,10 +19,15 @@ import Header from "../components/Footer.astro";
 
   <body>
     <header></header>
-    <h1>Rådgivning Orfeus</h1>
-    <Card headline="Gruppe terapi" tekst="Vores grupper er kun rådgivning for pårørende til misbrug og er opdelt efter type af relation." />
-    <Card headline="Klub sofa" tekst="bla bla bla" />
-    <Card headline="Rådgivningstelefonen" tekst="bla bla bla" />
+    <main>
+      <h1>Rådgivning Orfeus</h1>
+      <Card headline="Gruppe terapi" tekst="Vores grupper er kun rådgivning for pårørende til misbrug og er opdelt efter type af relation." />
+      <Card headline="Klub sofa" tekst="bla bla bla" />
+      <Card headline="Rådgivningstelefonen" tekst="bla bla bla" />
+    </main>
+    <section>
+      <NoteCardLeft />
+    </section>
     <footer></footer>
   </body>
 </html>

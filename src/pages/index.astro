@@ -11,20 +11,19 @@ import Header from "../components/Footer.astro";
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
+    <meta name="”robots”" content="”noindex,nofollow”" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <!-- Husk at skirv no robots -->
     <title>Rådgivningen Orfeus</title>
-  </head>
-
-  <body>
+  </head><body>
     <header></header>
     <main>
       <h1>Rådgivning Orfeus</h1>
       <div class="cards">
         <Card headline="Gruppe terapi" tekst="Vores grupper er kun rådgivning for pårørende til misbrug og er opdelt efter type af relation." />
         <Card headline="Klub sofa" tekst="Rådgivningstelefonen kan du altid ringe til i åbningstiderne" />
-        <Card headline="Indviduelle forløb" tekst="En samtale er ikke altid nok. I det individuelle samtaleforløb kan du over en længere periode snakke med den samme rådgiver." />
+        <Card headline="Indviduelle forløb" tekst="En samtale er ikke altid nok. I det individuelle samtaleforløb kan du over en længere periode snakke med den samme rådgiver." />
       </div>
     </main>
     <section>
@@ -32,13 +31,14 @@ import Header from "../components/Footer.astro";
     </section>
     <footer></footer>
   </body>
-</html>
 
-<style>
-  .cards {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    padding-top: 2rem;
-  }
-</style>
+  <style>
+    .cards {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      padding-top: 2rem;
+      margin-inline: 20rem;
+    }
+  </style>
+</html>

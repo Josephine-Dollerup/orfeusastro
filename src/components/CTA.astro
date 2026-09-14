@@ -1,17 +1,11 @@
+---
+const { text } = Astro.props;
+---
+
 <div class="cta-knapper">
-
-  <div class="læs-mere">
-    LÆS MERE
-  </div>
-
-  <div class="kontakt">
-    KONTAKT
-  </div>
-
   <div class="ansøg">
-    ANSØG NU
+    {text}
   </div>
-
 </div>
 
 <style>
@@ -20,8 +14,6 @@
     gap: 10px;
   }
 
-  .læs-mere,
-  .kontakt,
   .ansøg {
     background-color: #ff7048;
     color: white;
@@ -29,5 +21,6 @@
     border-radius: 8px;
     font-size: 14px;
     font-weight: bold;
+    text-transform: uppercase;
   }
 </style>

@@ -1,3 +1,40 @@
+---
+import { Image } from "astro:assets";
+import Firefly_en_kvinde from "../assets/Firefly_en_kvinde.png";
+---
+
 <article>
-  <h3>Noget</h3>
+  <div>
+    <h3>Mød Stine som er pårørende og i et forløb hos os.</h3>
+    <p>Oplev Stine historie. Stine fortæller om sin situation som pårørende til misbrug, hvilke overvejelser hun havde, inden hun søgte rådgivning, hvordan hun fandt frem til Orfeus, og hvordan hun oplevede Orfeus’ forløb og de råd og værktøjer, der har hjulpet hende igennem hendes situation og hverdag.</p>
+  </div>
+  <div>
+    <Image src={Firefly_en_kvinde} alt="Stine" width={200} height={200} />
+  </div>
 </article>
+
+<style>
+  article {
+    display: grid;
+    background-color: #f5e7d3;
+    padding: 120px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 15cap;
+    margin-right: 15cap;
+  }
+  h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  p {
+    color: #666;
+  }
+
+  img {
+    border-radius: 5%;
+    grid-template-columns: 2fr 1fr;
+  }
+</style>

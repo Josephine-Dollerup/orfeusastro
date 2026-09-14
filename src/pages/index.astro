@@ -2,8 +2,7 @@
 import Card from "../components/Card.astro";
 import NoteCardLeft from "../components/NoteCardLeft.astro";
 import CTA from "../components/CTA.astro";
-import Footer from "../components/Header.astro";
-import Header from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 ---
 
 <html lang="da">
@@ -17,13 +16,22 @@ import Header from "../components/Footer.astro";
     <!-- Husk at skirv no robots -->
     <title>Rådgivningen Orfeus</title>
   </head><body>
-    <header></header>
+    <Header />
     <main>
       <h1>Rådgivning Orfeus</h1>
       <div class="cards">
-        <Card headline="Gruppe terapi" tekst="Vores grupper er kun rådgivning for pårørende til misbrug og er opdelt efter type af relation." />
-        <Card headline="Klub sofa" tekst="Rådgivningstelefonen kan du altid ringe til i åbningstiderne" />
-        <Card headline="Indviduelle forløb" tekst="En samtale er ikke altid nok. I det individuelle samtaleforløb kan du over en længere periode snakke med den samme rådgiver." />
+        <Card
+          headline="Gruppe terapi"
+          tekst="Vores grupper er kun rådgivning for pårørende til misbrug og er opdelt efter type af relation."
+        />
+        <Card
+          headline="Klub sofa"
+          tekst="Rådgivningstelefonen kan du altid ringe til i åbningstiderne"
+        />
+        <Card
+          headline="Indviduelle forløb"
+          tekst="En samtale er ikke altid nok. I det individuelle samtaleforløb kan du over en længere periode snakke med den samme rådgiver."
+        />
       </div>
     </main>
     <section>

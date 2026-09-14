@@ -21,9 +21,11 @@ import Header from "../components/Footer.astro";
     <header></header>
     <main>
       <h1>Rådgivning Orfeus</h1>
-      <Card headline="Gruppe terapi" tekst="Vores grupper er kun rådgivning for pårørende til misbrug og er opdelt efter type af relation." />
-      <Card headline="Klub sofa" tekst="bla bla bla" />
-      <Card headline="Rådgivningstelefonen" tekst="bla bla bla" />
+      <div class="cards">
+        <Card headline="Gruppe terapi" tekst="Vores grupper er kun rådgivning for pårørende til misbrug og er opdelt efter type af relation." />
+        <Card headline="Klub sofa" tekst="Rådgivningstelefonen kan du altid ringe til i åbningstiderne" />
+        <Card headline="Indviduelle forløb" tekst="En samtale er ikke altid nok. I det individuelle samtaleforløb kan du over en længere periode snakke med den samme rådgiver." />
+      </div>
     </main>
     <section>
       <NoteCardLeft />
@@ -31,3 +33,12 @@ import Header from "../components/Footer.astro";
     <footer></footer>
   </body>
 </html>
+
+<style>
+  .cards {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding-top: 2rem;
+  }
+</style>

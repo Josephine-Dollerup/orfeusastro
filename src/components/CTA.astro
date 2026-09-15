@@ -1,0 +1,26 @@
+---
+const { text } = Astro.props;
+---
+
+<div class="cta-knapper">
+  <div class="ansøg">
+    {text}
+  </div>
+</div>
+
+<style>
+  .cta-knapper {
+    display: flex;
+    gap: 10px;
+  }
+
+  .ansøg {
+    background-color: #ff7048;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+</style>

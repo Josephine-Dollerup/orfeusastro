@@ -19,20 +19,36 @@ import Header from "../components/Header.astro";
   </head><body>
     <Header />
     <main>
-      <h1>Rådgivning Orfeus</h1>
-      <div class="cards">
-        <Card headline="Gruppe terapi" tekst="Vores grupper er kun rådgivning for pårørende til misbrug og er opdelt efter type af relation." />
-        <Card headline="Klub sofa" tekst="Rådgivningstelefonen kan du altid ringe til i åbningstiderne" />
-        <Card headline="Indviduelle forløb" tekst="En samtale er ikke altid nok. I det individuelle samtaleforløb kan du over en længere periode snakke med den samme rådgiver." />
-      </div>
+      <section>
+        <h1>Rådgivning Orfeus</h1>
+        <p>Du kan ikke bære det for dem. Men du behøver ikke at bære det alene. Tag kontakt i dag, vi står klar til at hjælpe.</p>
+      </section>
+      <section>
+        <h2>Former for rådgivning</h2>
+        <p>Er du pårørende til en person eller har du selv problemer med rusmidler? Ring til os på +45 70 60 46 40, for at få en fortrolig, støttende samtale og hør mere om, hvordan du kan ansøge om et forløb.</p>
+        <div class="cards">
+          <Card headline="Gruppe terapi" tekst="Vores grupper er kun rådgivning for pårørende til misbrug og er opdelt efter type af relation." />
+          <Card headline="Klub sofa" tekst="Rådgivningstelefonen kan du altid ringe til i åbningstiderne" />
+          <Card headline="Indviduelle forløb" tekst="En samtale er ikke altid nok. I det individuelle samtaleforløb kan du over en længere periode snakke med den samme rådgiver." />
+        </div>
+      </section>
     </main>
     <section>
       <NoteCardLeft />
       <NoteCardright />
       <footer></footer>
     </section>
+    <footer></footer>
+  </body>
 
-    <style>
+  <style>
+    <!-- Mobil -- > @media (max-width: 768px) {
+      .card {
+        margin-inline: auto;
+      }
+    }
+
+    <!-- Desktop -- > @media (min-width: 768px) {
       .cards {
         display: grid;
         gap: 2rem;
@@ -40,6 +56,6 @@ import Header from "../components/Header.astro";
         padding-top: 2rem;
         margin-inline: 20rem;
       }
-    </style>
-  </body>
+    }
+  </style>
 </html>

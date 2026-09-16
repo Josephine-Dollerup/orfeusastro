@@ -110,10 +110,10 @@ p {
   padding-block: 5rem;
   padding-inline: 1rem;
 }
-/* .setion_4 {
+.setion_4 {
   padding-block: 5rem;
   padding-inline: 1rem;
-} */
+}
 
 /* Kompontener */
 .card {
@@ -132,6 +132,7 @@ footer {
   color: #fff;
   padding-block: 2rem;
   gap: 1rem;
+  padding-inline: 2rem;
 }
 .logo_footer {
   max-width: 50px;
@@ -161,10 +162,10 @@ footer {
   .setion_3 {
     padding-block: 9rem;
   }
-  /* .setion_4 {
+  .setion_4 {
     padding-block: 9rem;
     padding-inline: 9rem;
-  } */
+  }
 
   .cards {
     display: grid;

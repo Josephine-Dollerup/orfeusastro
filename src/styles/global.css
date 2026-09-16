@@ -126,6 +126,35 @@ p {
 
 /* Desktop : test*/
 @media (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+    outline: 1px solid red;
+  }
+  h2 {
+    font-size: 4rem;
+    outline: 1px solid red;
+  }
+  .setion_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .setion_1 {
+    padding-block: 9rem;
+    padding-inline: 9rem;
+  }
+  .setion_2 {
+    padding-block: 9rem;
+    padding-inline: 9rem;
+  }
+  .setion_3 {
+    padding-block: 9rem;
+  }
+  .setion_4 {
+    padding-block: 9rem;
+    padding-inline: 9rem;
+  }
+
   .cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));

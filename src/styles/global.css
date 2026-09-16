@@ -110,10 +110,10 @@ p {
   padding-block: 5rem;
   padding-inline: 1rem;
 }
-.setion_4 {
+/* .setion_4 {
   padding-block: 5rem;
   padding-inline: 1rem;
-}
+} */
 
 /* Kompontener */
 .card {
@@ -128,11 +128,9 @@ p {
 @media (min-width: 768px) {
   h1 {
     font-size: 4rem;
-    outline: 1px solid red;
   }
   h2 {
     font-size: 4rem;
-    outline: 1px solid red;
   }
   .setion_1 {
     display: grid;
@@ -150,10 +148,10 @@ p {
   .setion_3 {
     padding-block: 9rem;
   }
-  .setion_4 {
+  /* .setion_4 {
     padding-block: 9rem;
     padding-inline: 9rem;
-  }
+  } */
 
   .cards {
     display: grid;

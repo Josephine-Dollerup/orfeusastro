@@ -124,9 +124,11 @@ p {
 @media (min-width: 768px) {
   h1 {
     font-size: 4rem;
+    outline: 1px solid red;
   }
   h2 {
     font-size: 4rem;
+    outline: 1px solid red;
   }
   .setion_1 {
     display: grid;

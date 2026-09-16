@@ -124,7 +124,7 @@ p {
   gap: 1rem;
 }
 
-/* Desktop */
+/* Desktop : test*/
 @media (min-width: 768px) {
   .cards {
     display: grid;

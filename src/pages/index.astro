@@ -1,10 +1,15 @@
 ---
 import Card from "../components/Card.astro";
 import NoteCardLeft from "../components/NoteCardLeft.astro";
-import NoteCardright from "../components/NoteCardright.astro";
 import CTA from "../components/CTA.astro";
 import Footer from "../components/Header.astro";
 import Header from "../components/Footer.astro";
+import { Image } from "astro:assets";
+import img1 from "../assets/inviduelleforløb.png";
+import img2 from "../assets/klubsofa.png";
+import img3 from "../assets/gruppeforloeb.png";
+import haender from "../assets/haender.svg";
+import "../styles/global.css";
 ---
 
 <!-- HER ER COMMENT HAHA -->
@@ -19,8 +24,9 @@ import Header from "../components/Footer.astro";
 
     <!-- Husk at skirv no robots -->
     <title>Rådgivningen Orfeus</title>
-  </head><body>
-    <header></header>
+  </head>
+  <body>
+    <Header />
     <main>
       <section class="setion_1">
         <h1>FÆLLESSKAB FOR DIG DER ER PÅRØRENDE TIL MISBRUGERE.</h1>
@@ -44,28 +50,19 @@ import Header from "../components/Footer.astro";
           <Card headline="Indviduelle forløb" tekst="En samtale er ikke altid nok. I det individuelle samtaleforløb kan du over en længere periode snakke med den samme rådgiver." imgSrc={img3} />
         </div>
       </section>
-    </main>
-    <section>
+      <section class="setion_3">
+        <h2>
+          Ansøg om støtteforløb.
+          <br />Vi står klar til at hjælpe dig.
+        </h2>
+        <CTA />
+      </section>
+      <section class="setion_4">
+        <h2>Lær om andres historier</h2>
+        <p>Læs personlige historier fra andre, der står i en lignende situation.</p>
+      </section>
       <NoteCardLeft />
-    </section>
-    <footer></footer>
+      <Footer />
+    </main>
   </body>
 </html>
-
-<style>
-  <!-- Mobil -- > @media (max-width: 768px) {
-    .card {
-      margin-inline: auto;
-    }
-  }
-
-  <!-- Desktop -- > @media (min-width: 768px) {
-    .cards {
-      display: grid;
-      gap: 2rem;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      padding-top: 2rem;
-      margin-inline: 20rem;
-    }
-  }
-</style>

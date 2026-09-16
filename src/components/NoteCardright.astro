@@ -5,7 +5,7 @@ import Firefly_notebook from "../assets/Firefly_notebook.png";
 
 <article>
   <div>
-    <Image src={Firefly_notebook} alt="notebook" width={220} height={320} />
+    <Image src={Firefly_notebook} alt="notebook" width={200} height={300} />
   </div>
   <div class="text">
     <h3>Notesbog - oplev andres historier anonymt.</h3>
@@ -17,25 +17,26 @@ import Firefly_notebook from "../assets/Firefly_notebook.png";
   article {
     display: grid;
     background-color: #a8beac;
-    padding: 30px;
-    padding-right: 70px;
-    grid-template-columns: 1fr 1fr;
-    gap: 110px;
+    padding: 15px;
+    padding-right: 40px;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
     border-radius: 50px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-left: 15cap;
-    margin-right: 15cap;
-    margin-top: 15px;
+    margin-left: 16cap;
+    margin-right: 16cap;
+    margin-top: 25px;
+    margin-bottom: 15px;
   }
 
   .text {
-    padding-top: 70px;
+    margin-top: 140px;
     padding-left: 40px;
   }
 
   img {
-    border-radius: 5%;
-    margin-left: 70px;
+    border-radius: 10%;
+    margin-left: 30px;
   }
 
   @media (max-width: 768px) {

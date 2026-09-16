@@ -124,6 +124,14 @@ p {
   gap: 1rem;
 }
 
+/* Footer */
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--farve-text);
+  color: #fff;
+}
+
 /* Desktop : test*/
 @media (min-width: 768px) {
   h1 {
@@ -160,5 +168,8 @@ p {
     margin-inline: auto;
     max-width: 1200px;
     gap: 4rem;
+  }
+  footer {
+    grid-template-columns: 2fr 1fr 1fr;
   }
 }

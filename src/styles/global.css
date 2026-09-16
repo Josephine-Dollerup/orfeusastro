@@ -126,6 +126,11 @@ footer {
   grid-template-columns: 1fr;
   background-color: var(--farve-text);
   color: #fff;
+  padding-block: 2rem;
+  gap: 1rem;
+}
+.logo_footer {
+  max-width: 50px;
 }
 
 /* Desktop : test*/
@@ -166,6 +171,6 @@ footer {
     gap: 4rem;
   }
   footer {
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

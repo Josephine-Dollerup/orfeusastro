@@ -1,39 +1,11 @@
 ---
-const { headline, tekst } = Astro.props;
+const { headline, tekst, imgSrc } = Astro.props;
+import img from "../assets/gruppeforloeb.png";
+import { Image } from "astro:assets";
 ---
 
 <article>
-  <div></div>
+  <Image src={imgSrc} alt="Gruppe billede" width={700} height={1000} />
   <h3>{headline}</h3>
   <p>{tekst}</p>
 </article>
-
-<style>
-  article {
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-  }
-
-  div {
-    width: 100%;
-    height: 350px;
-    margin-bottom: 1rem;
-    background-color: #eee;
-  }
-</style>
-
-<!-- Det her skal sættes ind i index  -->
-<!-- <div class="cards">
-        <Card headline="Check det ud" text="Der er nok vigtigt" />
-        <Card headline="Her er også noget spændende" text="Med mere tekst" />
-        <Card headline="Lidt ekstra" text="Som bestemt er vigtigt" />
-      </div> -->
-
-<!--  .cards {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    padding-top: 2rem;
-  } -->

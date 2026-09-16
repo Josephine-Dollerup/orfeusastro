@@ -1,0 +1,128 @@
+/* reset - brug fra nu af ved reset i CSS */
+:root {
+  --farve-lysegrøn: #cddacf;
+  --farve-text: #472c0f;
+  --farve-mørkegrøn: #225c30;
+  --farve-orange: #ff7548;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  interpolate-size: allow-keywords;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2 {
+  line-height: 1.25;
+}
+
+p,
+li {
+  text-wrap: pretty;
+}
+
+img,
+svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+label {
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  font-size: max(1em, 16px);
+}
+
+textarea {
+  resize: none;
+  min-height: 4lh;
+}
+
+legend {
+  padding: 0;
+}
+
+select,
+::picker(select) {
+  appearance: base-select;
+}
+
+/************ Layout index **********/
+
+/* Generalt */
+section {
+  color: var(--farve-text);
+}
+h1 {
+  font-size: 4rem;
+  font-family: "DM Sans", Sans-serif;
+}
+h2 {
+  font-size: 4rem;
+  font-family: "DM Sans", Sans-serif;
+}
+p {
+  font-family: "DM Sans", Sans-serif;
+}
+
+.setion_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-block: 9rem;
+  padding-inline: 9rem;
+  background-color: var(--farve-lysegrøn);
+  width: none;
+}
+.setion_2 {
+  padding-block: 9rem;
+  padding-inline: 9rem;
+}
+.setion_3 {
+  padding-block: 9rem;
+  background-color: var(--farve-lysegrøn);
+}
+.setion_3 h2 {
+  text-align: center;
+}
+.setion_4 {
+  padding-block: 9rem;
+  padding-inline: 9rem;
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+  .card {
+    padding-inline: 1rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    padding-block: 5rem;
+    margin-inline: auto;
+    max-width: 1200px;
+    gap: 4rem;
+  }
+}

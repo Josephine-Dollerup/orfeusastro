@@ -3,7 +3,8 @@ import Card from "../components/Card.astro";
 import NoteCardLeft from "../components/NoteCardLeft.astro";
 import NoteCardright from "../components/NoteCardright.astro";
 import CTA from "../components/CTA.astro";
-import Header from "../components/Header.astro";
+import Footer from "../components/Header.astro";
+import Header from "../components/Footer.astro";
 ---
 
 <html lang="da">
@@ -14,34 +15,42 @@ import Header from "../components/Header.astro";
     <meta name="”robots”" content="”noindex,nofollow”" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+
     <!-- Husk at skirv no robots -->
     <title>Rådgivningen Orfeus</title>
   </head><body>
-    <Header />
+    <header></header>
     <main>
-      <section>
-        <h1>Rådgivning Orfeus</h1>
-        <p>Du kan ikke bære det for dem. Men du behøver ikke at bære det alene. Tag kontakt i dag, vi står klar til at hjælpe.</p>
+      <section class="setion_1">
+        <h1>FÆLLESSKAB FOR DIG DER ER PÅRØRENDE TIL MISBRUGERE.</h1>
+        <div>
+          <Image src={haender} alt="En beskrivelse af billedet" width={600} height={400} />
+        </div>
+        <p>
+          Du kan ikke bære det for dem.
+          <br /> Men du behøver ikke at bære det alene.
+          <br />Tag kontakt i dag, vi står klar til at hjælpe.
+        </p>
+        <CTA />
+        <CTA />
       </section>
-      <section>
+      <section class="setion_2">
         <h2>Former for rådgivning</h2>
         <p>Er du pårørende til en person eller har du selv problemer med rusmidler? Ring til os på +45 70 60 46 40, for at få en fortrolig, støttende samtale og hør mere om, hvordan du kan ansøge om et forløb.</p>
         <div class="cards">
-          <Card headline="Gruppe terapi" tekst="Vores grupper er kun rådgivning for pårørende til misbrug og er opdelt efter type af relation." />
-          <Card headline="Klub sofa" tekst="Rådgivningstelefonen kan du altid ringe til i åbningstiderne" />
-          <Card headline="Indviduelle forløb" tekst="En samtale er ikke altid nok. I det individuelle samtaleforløb kan du over en længere periode snakke med den samme rådgiver." />
+          <Card headline="Gruppe terapi" tekst="Vores grupper er kun rådgivning for pårørende til misbrug og er opdelt efter type af relation." imgSrc={img1} />
+          <Card headline="Klub sofa" tekst="Rådgivningstelefonen kan du altid ringe til i åbningstiderne" imgSrc={img2} />
+          <Card headline="Indviduelle forløb" tekst="En samtale er ikke altid nok. I det individuelle samtaleforløb kan du over en længere periode snakke med den samme rådgiver." imgSrc={img3} />
         </div>
       </section>
     </main>
-
     <section>
       <NoteCardLeft />
-      <NoteCardright />
-      <footer></footer>
     </section>
     <footer></footer>
   </body>
 </html>
+
 <style>
   <!-- Mobil -- > @media (max-width: 768px) {
     .card {

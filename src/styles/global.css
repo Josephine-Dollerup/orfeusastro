@@ -120,7 +120,7 @@ p {
   gap: 1rem;
 }
 
-/* Desktop */
+/* Desktop : test*/
 @media (min-width: 768px) {
   h1 {
     font-size: 4rem;
